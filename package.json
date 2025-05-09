@@ -1,0 +1,32 @@
+{
+  "name": "voting-organization",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clear": "rm -rf node_modules package-lock.json .next artifacts cache",
+    "deploy": "hardhat run scripts/deploy.js --network holesky",
+    "deploy-local": "hardhat run scripts/deploy.js --network localhost",
+    "node": "hardhat node"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ether": "^0.0.9",
+    "dotenv": "^16.4.7",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-icons": "^4.4.0",
+    "web3modal": "^1.9.9",
+    "react-hot-toast": "^2.4.1",
+    "@formspree/react": "^2.5.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.11.2"
+  }
+}
