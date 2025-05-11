@@ -45,7 +45,7 @@ const Member = ({
                     </strong>
                   </p>
                   <p class="mb-3">
-                    When I first started trading But with time and experience.
+                    Confident in making informed decisions.
                   </p>
                   {path == "candidate" &&
                     item?.status == 1 &&

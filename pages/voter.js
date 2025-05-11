@@ -89,7 +89,7 @@ const voter = () => {
           <div class="row align-items-center justify-content-center justify-content-xl-start">
             <div class="col-12 col-sm-10 col-md-6">
               <div class="welcome alt-color text-center text-md-start pt-120 pb-120 position-relative z-0">
-                <h1 class="display-one">Welcome Back!</h1>
+                <h1 class="display-one" style={{ color: "white" }}>Welcome Back!</h1>
                 {image && <PreviewImg image={image} />}
                 {pdf && <Preview pdf={pdf} />}
               </div>
@@ -101,7 +101,7 @@ const voter = () => {
                     {" "}
                     <img src="assets/images/logo.png" alt="Logo" />
                   </a>
-                  <h5 class="mt-5 mt-lg-6">Register as a voter </h5>
+                  <h5 class="mt-5 mt-lg-6" style={{ color: "white" }}>Register as a voter </h5>
                 </div>
 
                 {candidate?.address == zeroAddress && (
@@ -113,7 +113,7 @@ const voter = () => {
                     <div class="d-flex flex-column gap-5 gap-lg-6 ">
                       <Input
                         name={"Name"}
-                        placeholder={"_name"}
+                        placeholder={"Enter Full Name"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -124,7 +124,7 @@ const voter = () => {
                       />
                       <Input
                         name={"Voter Address"}
-                        placeholder={"_voterAddress"}
+                        placeholder={"Enter Voter Address"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -135,7 +135,7 @@ const voter = () => {
                       />
                       <Input
                         name={"Photograph"}
-                        placeholder={"_photograph"}
+                        placeholder={"Enter Photograph URL or upload below"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -145,8 +145,8 @@ const voter = () => {
                         }
                       />
                       <Input
-                        name={"Parent Or SpouseName"}
-                        placeholder={"_parentOrSpouseName"}
+                        name={"Parent Name"}
+                        placeholder={"Enter Parent Name"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -157,7 +157,7 @@ const voter = () => {
                       />
                       <Input
                         name={"Gender"}
-                        placeholder={"_gender"}
+                        placeholder={"Enter Gender"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -168,7 +168,7 @@ const voter = () => {
                       />
                       <Input
                         name={"DOB Or Age"}
-                        placeholder={"_dobOrAge"}
+                        placeholder={"Enter DOB Or Age"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -178,8 +178,8 @@ const voter = () => {
                         }
                       />
                       <Input
-                        name={"AddressDetails"}
-                        placeholder={"_addressDetails"}
+                        name={"Address Details"}
+                        placeholder={"Enter Area Details"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -190,7 +190,7 @@ const voter = () => {
                       />
                       <Input
                         name={"Epic Number"}
-                        placeholder={"_epicNumber"}
+                        placeholder={"Enter EPIC Number"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -200,8 +200,8 @@ const voter = () => {
                         }
                       />
                       <Input
-                        name={"Part Number AndName"}
-                        placeholder={"_partNumberAndName"}
+                        name={"Part Number And Name"}
+                        placeholder={"Enter Part Number And Name"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -211,8 +211,8 @@ const voter = () => {
                         }
                       />
                       <Input
-                        name={"Assembly Constituency NumberAndName"}
-                        placeholder={"_assemblyConstituencyNumberAndName"}
+                        name={"Assembly Constituency Number And Name"}
+                        placeholder={"Enter Assembly No & Name"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -222,8 +222,8 @@ const voter = () => {
                         }
                       />
                       <Input
-                        name={"IssuingAuthoritySignature"}
-                        placeholder={"_issuingAuthoritySignature"}
+                        name={"Issuing Authority Signature"}
+                        placeholder={"Enter Issuing Authority Name"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -233,8 +233,8 @@ const voter = () => {
                         }
                       />
                       <Input
-                        name={"HologramAndBarcode"}
-                        placeholder={"_hologramAndBarcode"}
+                        name={"Hologram And Barcode"}
+                        placeholder={"Enter Barcode ID or Code"}
                         type={"text"}
                         handleClick={(e) =>
                           setUpdateVoter({
@@ -261,6 +261,7 @@ const voter = () => {
                       <button
                         class="cmn-btn py-3 px-5 px-lg-6 mt-7 mt-lg-8 w-100 d-center"
                         onClick={() => REGISTER_VOTER(updateVoter, image, pdf)}
+                        style={{ color: "white" }}
                       >
                         Register
                       </button>
@@ -285,3 +286,19 @@ const voter = () => {
 };
 
 export default voter;
+
+
+// {
+//   "_name": "Ravi Kumar",
+//   "_voterAddress": "1st Main Road, Rajajinagar, Bangalore, Karnataka",
+//   "_photograph": "https://example.com/images/ravi-kumar.jpg",
+//   "_parentOrSpouseName": "Suresh Kumar",
+//   "_gender": "Male",
+//   "_dobOrAge": "1985-06-15",  // or just "38"
+//   "_addressDetails": "Door No. 123, Near Park, Rajajinagar",
+//   "_epicNumber": "KA123456789",
+//   "_partNumberAndName": "56 - Rajajinagar",
+//   "_assemblyConstituencyNumberAndName": "162 - Bangalore North",
+//   "_issuingAuthoritySignature": "ECI Official",
+//   "_hologramAndBarcode": "HGR-2024-BA1234"
+// }

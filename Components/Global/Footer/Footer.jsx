@@ -31,9 +31,9 @@ const Footer = () => {
           </div>
           <div class="row gy-6 w-100 text-center text-sm-start align-items-center justify-content-sm-between">
             <div class="col-sm-8">
-              <h2>Start earning with only $20</h2>
+              <h2>Support Your Candidate in MITH President Election</h2>
               <p class="fs-six-up fw_500 mt-5">
-                Try our super easy portal for free
+                Cast your vote and be a part of the MITH community!
               </p>
             </div>
             <div class="col-sm-4 text-sm-end">
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
           <div class="col-6 col-lg-3">
             <div class="footer__part">
-              <h4 class="mb-6 mb-lg-8">Company</h4>
+              <h4 class="mb-6 mb-lg-8">Institute</h4>
               <ul class="footer_list d-flex flex-column gap-2 gap-sm-3 gap-md-4">
                 <li>
                   <a class="n2-color" href="#">
@@ -128,7 +128,7 @@ const Footer = () => {
               <h4 class="mb-6 mb-lg-8">Contact Us</h4>
               <div class="d-flex flex-column gap-2 gap-sm-3 gap-md-4">
                 <a href="#">
-                  <span class="__cf_email__">[email&#160;protected]</span>
+                  <span class="__cf_email__">mit.election@gmail.com</span>
                 </a>
                 <a href="tel:+123456789">+0123 456 789</a>
               </div>
@@ -139,7 +139,7 @@ const Footer = () => {
           <div class="col-12 border-top border-color opac-20 py-7 py-xxl-8">
             <div class="footer__copyright d-center gap-15 flex-wrap justify-content-md-between">
               <p class="fs-six order-2 order-md-0 text-center text-md-start">
-                Copyright ©<span class=""></span> @theblockchaincoders{" "}
+                Copyright ©<span class=""></span> @MITHElection2025{" "}
               </p>
               <ul class="social-area d-center gap-2 gap-md-3">
                 <li>

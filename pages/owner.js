@@ -72,7 +72,7 @@ const voter = () => {
           <div class="row align-items-center justify-content-center justify-content-xl-start">
             <div class="col-12 col-sm-10 col-md-6">
               <div class="welcome alt-color text-center text-md-start pt-120 pb-120 position-relative z-0">
-                <h1 class="display-one">Welcome Back Admin!</h1>
+                <h1 class="display-one" style={{ color: "white" }}>Welcome Back Admin!</h1>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-5 col-xxl-5 offset-xxl-1 text-center ms-xl-auto mx-auto">
@@ -82,7 +82,7 @@ const voter = () => {
                     {" "}
                     <img src="assets/images/logo.png" alt="Logo" />
                   </a>
-                  <h5 class="mt-5 mt-lg-6">Import Contract Functions </h5>
+                  <h5 class="mt-5 mt-lg-6" style={{ color: "white" }}>Import Contract Functions </h5>
                 </div>
 
                 {currentAddress == OWNER_ADDRESS.toLowerCase() && (
@@ -118,6 +118,7 @@ const voter = () => {
                         <button
                           class="cmn-btn py-3 px-5 px-lg-6 mt-7 mt-lg-8 w-100 d-center"
                           onClick={() => SET_VOTING_PREIOD(voteTime)}
+                          style={{ color: "white" }}
                         >
                           Set Voting Period
                         </button>
@@ -132,6 +133,7 @@ const voter = () => {
                         <button
                           class="cmn-btn py-3 px-5 px-lg-6 mt-7 mt-lg-8 w-100 d-center"
                           onClick={() => CHANGE_OWNER(changeOwner)}
+                          style={{ color: "white" }}
                         >
                           Change Owner
                         </button>
@@ -142,6 +144,7 @@ const voter = () => {
                       <button
                         class="cmn-btn py-3 px-5 px-lg-6 mt-7 mt-lg-8 w-100 d-center"
                         onClick={() => RESET_CONTRACT()}
+                        style={{ color: "white" }}
                       >
                         Reset Contract
                       </button>

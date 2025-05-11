@@ -92,7 +92,7 @@ const signup = () => {
           <div class="row align-items-center justify-content-center justify-content-xl-start">
             <div class="col-12 col-sm-10 col-md-6">
               <div class="welcome alt-color text-center text-md-start pt-120 pb-120 position-relative z-0">
-                <h1 class="display-one">Welcome Back!</h1>
+                <h1 class="display-one" style={{ color: "white" }}>Welcome Back!</h1>
                 {image && <PreviewImg image={image} />}
                 {pdf && <Preview pdf={pdf} />}
               </div>
@@ -104,7 +104,7 @@ const signup = () => {
                     {" "}
                     <img src="assets/images/logo.png" alt="Logo" />
                   </a>
-                  <h5 class="mt-5 mt-lg-6">Register as a candidate</h5>
+                  <h5 class="mt-5 mt-lg-6" style={{ color: "white" }}>Register as a candidate</h5>
                 </div>
 
                 <div
@@ -117,7 +117,7 @@ const signup = () => {
                       <div class="col-sm-6 col-md-12 col-xl-6">
                         <Input
                           name={"Name"}
-                          placeholder={"_name"}
+                          placeholder={"Enter Full Name"}
                           type={"text"}
                           handleClick={(e) =>
                             setUpdateCandidate({
@@ -130,7 +130,7 @@ const signup = () => {
                       <div class="col-sm-6 col-md-12 col-xl-6">
                         <Input
                           name={"Nomination Form"}
-                          placeholder={"_nominationForm"}
+                          placeholder={"Enter Nomination Form ID"}
                           type={"text"}
                           handleClick={(e) =>
                             setUpdateCandidate({
@@ -144,7 +144,7 @@ const signup = () => {
 
                     <Input
                       name={"Affidavit"}
-                      placeholder={"_affidavit"}
+                      placeholder={"Enter Affidavit Details"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -156,7 +156,7 @@ const signup = () => {
 
                     <Input
                       name={"Criminal Antecedents"}
-                      placeholder={"_criminalAntecedents"}
+                      placeholder={"Mention Any Criminal Background"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -167,7 +167,7 @@ const signup = () => {
                     />
                     <Input
                       name={"Assets And Liabilities"}
-                      placeholder={"_assetsAndLiabilities"}
+                      placeholder={"Declare Assets and Liabilities"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -178,7 +178,7 @@ const signup = () => {
                     />
                     <Input
                       name={"Educational Qualifications"}
-                      placeholder={"_educationalQualifications"}
+                      placeholder={"Enter Educational Qualifications"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -189,7 +189,7 @@ const signup = () => {
                     />
                     <Input
                       name={"Electoral RollEntry"}
-                      placeholder={"_electoralRollEntry"}
+                      placeholder={"Provide Electoral Roll Entry ID"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -200,7 +200,7 @@ const signup = () => {
                     />
                     <Input
                       name={"Security Deposit"}
-                      placeholder={"_securityDeposit"}
+                      placeholder={"Enter Security Deposit Details"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -211,7 +211,7 @@ const signup = () => {
                     />
                     <Input
                       name={"Party Affiliation"}
-                      placeholder={"_partyAffiliation"}
+                      placeholder={"Mention Party Affiliation (if any)"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -222,7 +222,7 @@ const signup = () => {
                     />
                     <Input
                       name={"Oath Or Affirmation"}
-                      placeholder={"_oathOrAffirmation"}
+                      placeholder={"Provide Oath or Affirmation Statement"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -233,7 +233,7 @@ const signup = () => {
                     />
                     <Input
                       name={"Photographs"}
-                      placeholder={"_photographs"}
+                      placeholder={"Upload Photograph URL or Reference"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -243,8 +243,8 @@ const signup = () => {
                       }
                     />
                     <Input
-                      name={"ProofOfAge"}
-                      placeholder={"_proofOfAge"}
+                      name={"Proof Of Age"}
+                      placeholder={"Upload/Enter Proof of Age Document"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -254,8 +254,8 @@ const signup = () => {
                       }
                     />
                     <Input
-                      name={"ProofOfAddress"}
-                      placeholder={"_proofOfAddress"}
+                      name={"Proof Of Address"}
+                      placeholder={"Upload/Enter Proof of Address Document"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -265,8 +265,8 @@ const signup = () => {
                       }
                     />
                     <Input
-                      name={"PanCardDetails"}
-                      placeholder={"_panCardDetails"}
+                      name={"PanCard Details"}
+                      placeholder={"Enter PAN Card Number"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -276,8 +276,8 @@ const signup = () => {
                       }
                     />
                     <Input
-                      name={"VoterIdCardDetails"}
-                      placeholder={"_voterIdCardDetails"}
+                      name={"VoterId CardDetails"}
+                      placeholder={"Enter Voter ID Card Number"}
                       type={"text"}
                       handleClick={(e) =>
                         setUpdateCandidate({
@@ -299,7 +299,7 @@ const signup = () => {
                       setPdf={setPdf}
                     />
                   </div>
-                  <label class="checkbox-single d-flex align-items-center nw1-color mt-3">
+                  <label class="checkbox-single d-flex align-items-center nw1-color mt-3" style={{ color: "white" }}>
                     <span class="checkbox-area d-center">
                       <input type="checkbox" />
                       <span class="checkmark d-center"></span>
@@ -312,6 +312,7 @@ const signup = () => {
                         UPDATE_CANDIDATE(updateCandidate, image, pdf)
                       }
                       class="cmn-btn py-3 px-5 px-lg-6 mt-7 mt-lg-8 w-100 d-center"
+                      style={{ color: "white" }}
                     >
                       Update
                     </button>
@@ -319,7 +320,7 @@ const signup = () => {
                 </div>
 
                 <div class="mt-8 mt-lg-10">
-                  <p>
+                  <p style={{ color: "white" }}>
                     Before registering kindly check the nomination details{" "}
                     <a href="/">here</a>
                   </p>

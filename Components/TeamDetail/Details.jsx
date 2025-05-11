@@ -37,9 +37,7 @@ const Details = ({
               <div class="team__content pe-md-4">
                 <h5 class="team__title mb-4">{candidate?._name}</h5>
                 <p class="mb-4">
-                  Hey there! So glad you stopped by to Meet Our Company. Don't
-                  miss out on this opportunity to learn about what we do and the
-                  amazing team that makes it all happen!
+                  Hey there! We're glad you stopped by to learn about the importance of voting. Don't miss this chance to make an informed decision and understand how your vote truly shapes the future!
                 </p>
                 <ul class="social-area d-flex align-items-center gap-2 gap-md-3 mt-8 mt-lg-10">
                   <li>
